@@ -4,7 +4,7 @@
 ## Begin of user-editable part ##
 #################################
 
-POOL=eth-us-east.flexpool.io
+POOL=stratum+ssl://eth-us-east.flexpool.io:5555
 WALLET=0xe338e3f3a65e095aeb868b48454f1d01d11e8f31
 
 #################################
