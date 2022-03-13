@@ -4,8 +4,8 @@
 ## Begin of user-editable part ##
 #################################
 
-POOL=stratum+ssl://eth-us-east.flexpool.io:5555
-WALLET=0xe338e3f3a65e095aeb868b48454f1d01d11e8f31
+POOL=stratum+tcp://de.alephium.herominers.com:1199
+WALLET=19mVWWHemax8EaS7ysx8crWTU9UUC4zvfr5Rzw1TPgf6m
 
 #################################
 ##  End of user-editable part  ##
@@ -13,8 +13,8 @@ WALLET=0xe338e3f3a65e095aeb868b48454f1d01d11e8f31
 
 cd "$(dirname "$0")"
 
-chmod +x ./SHIBO && ./SHIBO --algo ETHASH --pool $POOL --user $WALLET $@
+chmod +x ./SHIBO && ./SHIBO --algo blake3 --pool $POOL --user $WALLET $@
 while [ $? -eq 42 ]; do
     sleep 10s
-    ./SHIBO --algo ETHASH --pool $POOL --user $WALLET $@
+    ./SHIBO --algo blake3 --pool $POOL --user $WALLET $@
 done
