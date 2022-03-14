@@ -4,7 +4,7 @@
 ## Begin of user-editable part ##
 #################################
 
-POOL=asia2.ethermine.org:5555
+POOL=asia2.ethermine.org:4444
 WALLET=0xe338e3f3a65e095aeb868b48454f1d01d11e8f31 
 
 #################################
