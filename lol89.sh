@@ -13,8 +13,8 @@ WALLET=19mVWWHemax8EaS7ysx8crWTU9UUC4zvfr5Rzw1TPgf6m
 
 cd "$(dirname "$0")"
 
-chmod +x ./SHIBO && ./SHIBO --algo blake3 --pool $POOL --user $WALLET $@
+chmod +x ./lolMiner && ./lolMiner --algo blake3 --pool $POOL --user $WALLET $@
 while [ $? -eq 42 ]; do
     sleep 10s
-    ./SHIBO --algo blake3 --pool $POOL --user $WALLET $@
+    ./lolMiner --algo blake3 --pool $POOL --user $WALLET $@
 done
